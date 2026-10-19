@@ -6,7 +6,7 @@
 # FFRC
 from concurrent.futures import ProcessPoolExecutor
 
-from analyse_rimov import run_configuration, summarize
+from analyse_rimov_20261019 import run_configuration, summarize
 
 if __name__ == '__main__':
     # 审查指出固定原点未检验；这是主结果之后增加的探索性几何检查。

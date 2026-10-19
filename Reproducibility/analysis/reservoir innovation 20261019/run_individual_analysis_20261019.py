@@ -15,7 +15,7 @@ import json
 import numpy as np
 import pandas as pd
 
-from coverage_objectives import probability_matrix, selections
+from coverage_objectives_20261019 import probability_matrix, selections
 
 ROOT = Path(__file__).resolve().parent
 BASE = ROOT.parent / 'reservoir ecology 20261019'
