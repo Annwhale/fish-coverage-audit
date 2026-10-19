@@ -13,8 +13,8 @@ import pandas as pd
 
 ROOT=Path(__file__).resolve().parents[1]
 BASE=ROOT/'submission/Ecological Indicators/Reproducibility/analysis'
-OUT=ROOT/'analysis/innovation reframing 20261009 v33'
-if (Path(__file__).resolve().parent.parent/'reservoir ecology v25').is_dir():
+OUT=ROOT/'analysis/innovation reframing 20261009'
+if (Path(__file__).resolve().parent.parent/'reservoir ecology 20261019').is_dir():
     OUT=Path(__file__).resolve().parent
     BASE=OUT.parent
     ROOT=OUT.parents[2]
@@ -30,12 +30,12 @@ def sha(path):
 def main():
     OUT.mkdir(parents=True,exist_ok=True)
     paths={
-        'positions':BASE/'reservoir ecology v25/outputs/Primary sampled positions.parquet',
-        'folds':BASE/'reservoir ecology v25/outputs/Fold support primary.csv',
-        'familiar_allocations':BASE/'reservoir ecology v25/outputs/Training allocations.csv',
-        'heldout_allocations':BASE/'reservoir innovation v28/validation/outputs/Validation allocations.csv',
-        'future_scores':BASE/'reservoir innovation v28/validation/outputs/Fish cycle coverage.csv',
-        'support_audits':BASE/'reservoir innovation v28/validation/outputs/Support audits.csv'}
+        'positions':BASE/'reservoir ecology 20261019/outputs/Primary sampled positions.parquet',
+        'folds':BASE/'reservoir ecology 20261019/outputs/Fold support primary.csv',
+        'familiar_allocations':BASE/'reservoir ecology 20261019/outputs/Training allocations.csv',
+        'heldout_allocations':BASE/'reservoir innovation 20261019/validation/outputs/Validation allocations.csv',
+        'future_scores':BASE/'reservoir innovation 20261019/validation/outputs/Fish cycle coverage.csv',
+        'support_audits':BASE/'reservoir innovation 20261019/validation/outputs/Support audits.csv'}
     s=pd.read_parquet(paths['positions']);s['cycle']=s.cycle.astype(str)
     folds=pd.read_csv(paths['folds']);a=pd.read_csv(paths['familiar_allocations'])
     b=pd.read_csv(paths['heldout_allocations']);scores=pd.read_csv(paths['future_scores'])

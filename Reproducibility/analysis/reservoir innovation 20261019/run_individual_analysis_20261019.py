@@ -18,7 +18,7 @@ import pandas as pd
 from coverage_objectives import probability_matrix, selections
 
 ROOT = Path(__file__).resolve().parent
-BASE = ROOT.parent / 'reservoir ecology v25'
+BASE = ROOT.parent / 'reservoir ecology 20261019'
 OUT = ROOT / 'individual coverage'
 OUT.mkdir(exist_ok=True)
 K_VALUES = [1, 2, 4, 8, 16, 32]
@@ -98,7 +98,7 @@ def summarize(result):
             runs.append(dict(zip(['method', 'k', 'fish', 'phase'], key), threshold=q,
                              longest_consecutive_observed_cycles=longest_run(z, q)))
     pd.DataFrame(runs).to_csv(OUT / 'Repeated omission runs.csv', index=False)
-    spec = importlib.util.spec_from_file_location('baseline', BASE / 'analyse_rimov.py')
+    spec = importlib.util.spec_from_file_location('baseline', BASE / 'analyse_rimov_20261019.py')
     baseline = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(baseline)
     intervals = []

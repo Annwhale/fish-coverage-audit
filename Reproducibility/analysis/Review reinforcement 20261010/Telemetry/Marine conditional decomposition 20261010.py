@@ -21,13 +21,13 @@ def find_repro():
                   + [p / 'submission/Ecological Indicators/Reproducibility' for p in parents]
                   + parents)
     for candidate in candidates:
-        if ((candidate / 'analysis/reservoir ecology v25').is_dir()
-                and (candidate / 'analysis/reservoir innovation v28').is_dir()):
+        if ((candidate / 'analysis/reservoir ecology 20261019').is_dir()
+                and (candidate / 'analysis/reservoir innovation 20261019').is_dir()):
             return candidate
-    raise FileNotFoundError('Required Reproducibility/analysis/reservoir ecology v25 not found among script ancestors')
+    raise FileNotFoundError('Required Reproducibility/analysis/reservoir ecology 20261019 not found among script ancestors')
 
 REPRO = find_repro()
-V28 = REPRO / 'analysis/reservoir innovation v28'
+V28 = REPRO / 'analysis/reservoir innovation 20261019'
 EXT = V28 / 'validation/external'
 METRICS = ['familiar_coverage', 'heldout_coverage', 'shared_history_loss',
            'outside_other_history_loss', 'heldout_configuration_gain', 'retained_coverage',
@@ -54,7 +54,7 @@ def ratios(z):
     return z
 
 def main():
-    paths = [V28 / 'public assets/NewmanSound_year1.csv', V28 / 'coverage_objectives.py',
+    paths = [V28 / 'public assets/NewmanSound_year1.csv', V28 / 'coverage_objectives_20261019.py',
              EXT / 'outputs/Allocations.csv', EXT / 'outputs/Fold support.csv',
              EXT / 'outputs/Fish day coverage.csv', EXT / 'outputs/Summary.csv', EXT / 'Protocol.md']
     spec = importlib.util.spec_from_file_location('existing_objective', paths[1])

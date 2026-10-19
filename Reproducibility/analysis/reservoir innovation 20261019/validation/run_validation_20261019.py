@@ -9,8 +9,8 @@ import importlib.util, json
 import numpy as np
 import pandas as pd
 ROOT=Path(__file__).resolve().parent
-V25=ROOT.parents[1]/'reservoir ecology v25'
-spec=importlib.util.spec_from_file_location('v25',V25/'analyse_rimov.py');m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m)
+V25=ROOT.parents[1]/'reservoir ecology 20261019'
+spec=importlib.util.spec_from_file_location('v25',V25/'analyse_rimov_20261019.py');m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m)
 OUT=ROOT/'outputs';OUT.mkdir(exist_ok=True)
 METHODS=['Day hotspot','Pooled hotspot','State balance'];KS=[1,2,4,8,16,32]
 s=pd.read_parquet(V25/'outputs/Primary sampled positions.parquet');s['cycle']=s.cycle.astype(str)

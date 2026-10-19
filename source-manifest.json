@@ -1,92 +1,74 @@
 [
   {
-    "path": "Reproducibility/analysis/Hangbu SAT validation 20261008/evaluate_predictions.py",
-    "source_sha256": "3301aefc348850644198ea59c9b195ec08b67fa75d12116ba07ad443e1abd815",
+    "path": "Reproducibility/analysis/Hangbu SAT validation 20261008/evaluate_predictions_20261019.py",
     "sha256": "382eb0054bdb410c53a05137c816bd3ab13949ae4e3316853938a2d871a4e1cf"
   },
   {
-    "path": "Reproducibility/analysis/Hangbu SAT validation 20261008/UAV input/bootstrap_review_units.py",
-    "source_sha256": "d622846f0c93fb4bfb39fabd2e52c0562dc2e51c39898ad448e03a425335f9e0",
+    "path": "Reproducibility/analysis/Hangbu SAT validation 20261008/UAV input/bootstrap_review_units_20261019.py",
     "sha256": "4ec346ecf1a23ffd091309b415b2fdec31f0f78dabd68ed5d1686e63270b943a"
   },
   {
-    "path": "Reproducibility/analysis/Hangbu SAT validation 20261008/UAV input/review_by_original_image.py",
-    "source_sha256": "b0d1517138444f3fe3d79032ce9aa14ac1e080d164b131ef2ee19b8baca01ce9",
+    "path": "Reproducibility/analysis/Hangbu SAT validation 20261008/UAV input/review_by_original_image_20261019.py",
     "sha256": "e94550a9319a306701bced9af1f223d8ee8d69bdcd1a1733b4b90a315771a9cd"
   },
   {
-    "path": "Reproducibility/analysis/innovation reframing 20261009 v33/decompose transfer 20261009.py",
-    "source_sha256": "5d35bb9877681a2a62dc481dcee764be105bb54c9bd1d59981c17d0e6f9c23b5",
-    "sha256": "ac7e82a6ac506babb884c90f472622a3834befd98845826b60c6d3f2fb8ddf62"
+    "path": "Reproducibility/analysis/innovation reframing 20261009/decompose transfer 20261009.py",
+    "sha256": "19e835d8c2d4545b8b86a3d184792cb4fb15f18e61d35b8a1cbd61ac23329860"
   },
   {
-    "path": "Reproducibility/analysis/reservoir ecology v25/analyse_rimov.py",
-    "source_sha256": "f69eea7f265240ac1274d3521c3e9d682836ccdcdec6367745bca6e37ddb78dd",
+    "path": "Reproducibility/analysis/reservoir ecology 20261019/analyse_rimov_20261019.py",
     "sha256": "18705a3d2b3f99d900eeacf650d7d4f909f46f57aab8bedfd0158c18bd94b678"
   },
   {
-    "path": "Reproducibility/analysis/reservoir ecology v25/run_grid_translation.py",
-    "source_sha256": "34b34fded47df57662c8e1bf40a082022fc16cb9d81792a8483188e230c372a2",
+    "path": "Reproducibility/analysis/reservoir ecology 20261019/run_grid_translation_20261019.py",
     "sha256": "b39d54c0162678ee1ec8aa15c81ca5621d148011be9ba2e9a8171c3b31e142a8"
   },
   {
-    "path": "Reproducibility/analysis/reservoir ecology v25/temporal_dependence.py",
-    "source_sha256": "217236c7f0cb5453fa12784a1dd408aa63a477660b05edb158e9f7fc44ec1034",
+    "path": "Reproducibility/analysis/reservoir ecology 20261019/temporal_dependence_20261019.py",
     "sha256": "a34dbad308462be313f46da946797323e2e3e53028016ed14135d77a03921c04"
   },
   {
-    "path": "Reproducibility/analysis/reservoir innovation v28/application/coverage_audit.py",
-    "source_sha256": "3346f3b6e63b6fb962d0cd7ff373c2fe6c910d02a9b72f28493dedeee1706974",
+    "path": "Reproducibility/analysis/reservoir innovation 20261019/application/coverage_audit_20261019.py",
     "sha256": "f7f11b93fca61e760e129265b3922f219044bf526ac6f608efff2eb2fb83f7ef"
   },
   {
-    "path": "Reproducibility/analysis/reservoir innovation v28/application/verify_small_example.py",
-    "source_sha256": "89dc959aef3645450309fad2d2d72866598bc6d841c7ec2d71a13a7c7d07719f",
-    "sha256": "f6b0e2b57d7ed664c0a1f7455268d1e769b2e060daee13c611b20b621ecb27ff"
+    "path": "Reproducibility/analysis/reservoir innovation 20261019/application/verify_small_example_20261019.py",
+    "sha256": "a03b7d57cbd05a61e8214c937a3d9dc66653c9426ab486b29eeb8d7ad1f1c908"
   },
   {
-    "path": "Reproducibility/analysis/reservoir innovation v28/coverage_objectives.py",
-    "source_sha256": "063e14f3817f0b89c1e5df2298bcbb7dda244c4265082498e9380d230f110329",
+    "path": "Reproducibility/analysis/reservoir innovation 20261019/coverage_objectives_20261019.py",
     "sha256": "338d4bde2416d5c9908201f8700b0cd05127a82b650b7b0e355138c3f632acfe"
   },
   {
-    "path": "Reproducibility/analysis/reservoir innovation v28/imagery/source_coverage_audit.py",
-    "source_sha256": "424d3bdc9916773ebd14a42d7c2e187f840b9293f468839606bfab64594cc6cc",
-    "sha256": "7f1a5eca6874404cc3b11863fcaa53e9447f20b2a3ec545f5f2edd7d9a04d96d"
+    "path": "Reproducibility/analysis/reservoir innovation 20261019/imagery/source_coverage_audit_20261019.py",
+    "sha256": "9622938f25130a3f3eb9b5b5b947125d32437be594ecd4f6516116d94d5ba370"
   },
   {
-    "path": "Reproducibility/analysis/reservoir innovation v28/run_individual_analysis.py",
-    "source_sha256": "b55b8ed9808d30b2b7e30d8d00755f8e1ad82023ea9bbb0b3f64b20b304b8129",
-    "sha256": "1748f4516e15165597712080b83ae1fda40ddc0bdf7bb95313abafb73c83307e"
+    "path": "Reproducibility/analysis/reservoir innovation 20261019/run_individual_analysis_20261019.py",
+    "sha256": "4f32e2cdefbdc9fe20ab3c0124aa5a11f3d616b38ba2003c7c3a6b16fde65023"
   },
   {
-    "path": "Reproducibility/analysis/reservoir innovation v28/validation/external/run_external.py",
-    "source_sha256": "c5eebf4a1a86a7b3ad5a2510796498e740be76ec214fc080052a7aad7d4fe398",
-    "sha256": "da87035ae823036a450cfc6b4d398c139c99397c3ad6c217fc246cb25d9f943c"
+    "path": "Reproducibility/analysis/reservoir innovation 20261019/validation/external/run_external_20261019.py",
+    "sha256": "16f0295713d2584b4454895301eba3d8aca625ff9a33e2cf1437416925f48a18"
   },
   {
-    "path": "Reproducibility/analysis/reservoir innovation v28/validation/run_validation.py",
-    "source_sha256": "dd82b2b91ac86e634f4ba4eedc408220a1085e9d44539a77e597db3022476c5a",
-    "sha256": "93f51de22d836299bdd6cce2b6d629c9585fc9fa2d4d124bab66f21084ac1b3c"
+    "path": "Reproducibility/analysis/reservoir innovation 20261019/validation/run_validation_20261019.py",
+    "sha256": "6709af4b34d91945bea482ce9c4a096c05db413b19fb26973faa8c4269865b94"
   },
   {
-    "path": "Reproducibility/analysis/Review reinforcement v42 1010/Imaging/Completed annotation sensitivity 1010.py",
-    "source_sha256": "147969b9bc98e549aa9d561c2da16f559241c39660435bacc672b3da2a88fc42",
-    "sha256": "a3ef9a8cd0ce2b56c845a1c6a78b8cf3651417ebf2709a5ebcd9ce070d6cd208"
+    "path": "Reproducibility/analysis/Review reinforcement 20261010/Imaging/Completed annotation sensitivity 20261010.py",
+    "sha256": "263c34482dd480f17415882bc1472811ff1f108ebc8a244b627114ac7603321a"
   },
   {
-    "path": "Reproducibility/analysis/Review reinforcement v42 1010/Telemetry/Candidate and ranking controls 1010.py",
-    "source_sha256": "dfaaa5823d882baa163e0a64693be74fc87f99e6510cac8dd07d79435fe1eef0",
-    "sha256": "6499329516cc810c58d24125644d7e9d205113307a6b1bc9aa8badd86a333efb"
+    "path": "Reproducibility/analysis/Review reinforcement 20261010/Telemetry/Candidate and ranking controls 20261010.py",
+    "sha256": "8b5dc60aa4f0c29d25870c65d8680360121562e51f150f632e924844eaf16dae"
   },
   {
-    "path": "Reproducibility/analysis/Review reinforcement v42 1010/Telemetry/Marine conditional decomposition 1010.py",
-    "source_sha256": "ce6d9b6f0f0b535b107bde743c51bf828be8beb6053e2d97c1b8385a0359ff3e",
-    "sha256": "c9323927485660853b7292d9c9c060c7bed939dee8292b90826f799b3370f216"
+    "path": "Reproducibility/analysis/Review reinforcement 20261010/Telemetry/Marine conditional decomposition 20261010.py",
+    "sha256": "a560a0660356ecb7d6e7fabff48a65f2e3df4fba8c99f5e976292ca2027b0068"
   },
   {
-    "path": "Reproducibility/analysis/Review reinforcement v42 1010/Telemetry/Telemetry denominators 1010.py",
-    "source_sha256": "1dc3772ae98be43e1e3524324db86a802eae5f1f6c5882c1fce0da917b380371",
-    "sha256": "0494cd04fc155ff412b312075a8e37e0fb908a3d9175e4a6998ca65bde6009f8"
+    "path": "Reproducibility/analysis/Review reinforcement 20261010/Telemetry/Telemetry denominators 20261010.py",
+    "sha256": "5f040fadb96d3cd226a47dd2e958b5f7a28ac7b3c9e06dad470bd2fd0d44a371"
   }
 ]

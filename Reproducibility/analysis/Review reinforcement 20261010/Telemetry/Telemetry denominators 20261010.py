@@ -21,16 +21,16 @@ def find_repro():
                   + [p / 'submission/Ecological Indicators/Reproducibility' for p in parents]
                   + parents)
     for candidate in candidates:
-        if ((candidate / 'analysis/reservoir ecology v25').is_dir()
-                and (candidate / 'analysis/reservoir innovation v28').is_dir()):
+        if ((candidate / 'analysis/reservoir ecology 20261019').is_dir()
+                and (candidate / 'analysis/reservoir innovation 20261019').is_dir()):
             return candidate
-    raise FileNotFoundError('Required Reproducibility/analysis/reservoir ecology v25 not found among script ancestors')
+    raise FileNotFoundError('Required Reproducibility/analysis/reservoir ecology 20261019 not found among script ancestors')
 
 REPRO = find_repro()
 BASE = REPRO / 'analysis'
-V25 = BASE / 'reservoir ecology v25'
-V28 = BASE / 'reservoir innovation v28'
-V33 = BASE / 'innovation reframing 20261009 v33'
+V25 = BASE / 'reservoir ecology 20261019'
+V28 = BASE / 'reservoir innovation 20261019'
+V33 = BASE / 'innovation reframing 20261009'
 METRICS = ['familiar_coverage', 'heldout_coverage', 'net_loss',
            'outside_other_history_loss', 'shared_history_loss',
            'heldout_configuration_gain', 'retained_coverage',
@@ -65,7 +65,7 @@ def main():
              'excluded_history_allocations': V28 / 'validation/outputs/Validation allocations.csv',
              'support_audits': V28 / 'validation/outputs/Support audits.csv',
              'saved_cycle_components': V33 / 'Transfer components per cycle.csv',
-             'reviewed_decomposition_source': BASE / 'comprehensive audit 20261009 v36/decompose transfer 20261009.py'}
+             'reviewed_decomposition_source': BASE / 'comprehensive audit 20261009/decompose transfer 20261009.py'}
     s = pd.read_parquet(paths['positions']); s['cycle'] = s.cycle.astype(str)
     folds = pd.read_csv(paths['folds'])
     a = pd.read_csv(paths['all_history_allocations'])
@@ -179,7 +179,7 @@ def main():
     csv(ratios(pd.DataFrame(sens)), 'Opportunity support sensitivity')
     external = V28 / 'validation/external'
     extpaths = [external / 'outputs/Allocations.csv', external / 'outputs/Fold support.csv',
-                external / 'outputs/Fish day coverage.csv', external / 'run_external.py',
+                external / 'outputs/Fish day coverage.csv', external / 'run_external_20261019.py',
                 external / 'outputs/Source and execution audit.json', V28 / 'public assets/NewmanSound_year1.csv']
     exta = pd.read_csv(extpaths[0]); extfold = pd.read_csv(extpaths[1])
     ext = dict(status='CACHE_HAS_NO_FOCAL_EXCLUDED_CONFIGURATIONS_NEW_CALCULATION_SEPARATE',
@@ -188,7 +188,7 @@ def main():
         saved_folds=len(extfold), grid_m=100, budget=8,
         support='Hourly marine centres of activity (COA), all-day, source calendar time; >=12 hours/day, >=3 historical qualified days/fish, 14-day history and 7-day future.',
         missing='No focal-history-excluded selected-cell configurations or their candidate/support audits are saved. Pooled hotspot versus maximin is an objective comparison, not the A-versus-B focal-history exclusion comparison.',
-        implication='The earlier cache alone cannot identify the focal-history-exclusion split. The separately authorized new first-week calculation is documented in Marine executed decomposition audit 1010.json and Marine conditional decomposition 1010.py; no cached earlier replication is claimed.',
+        implication='The earlier cache alone cannot identify the focal-history-exclusion split. The separately authorized new first-week calculation is documented in Marine executed decomposition audit 1010.json and Marine conditional decomposition 20261010.py; no cached earlier replication is claimed.',
         files={str(x.relative_to(REPRO)): sha(x) for x in extpaths})
     (OUT / 'Marine decomposition readiness 1010.json').write_text(json.dumps(ext, ensure_ascii=False, indent=2) + '\n')
     concentration = {}

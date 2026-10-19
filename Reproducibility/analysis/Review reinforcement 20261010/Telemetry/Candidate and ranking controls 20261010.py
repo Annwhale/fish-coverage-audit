@@ -20,15 +20,15 @@ def find_repro():
                   + [p / 'submission/Ecological Indicators/Reproducibility' for p in parents]
                   + parents)
     for candidate in candidates:
-        if ((candidate / 'analysis/reservoir ecology v25').is_dir()
-                and (candidate / 'analysis/reservoir innovation v28').is_dir()):
+        if ((candidate / 'analysis/reservoir ecology 20261019').is_dir()
+                and (candidate / 'analysis/reservoir innovation 20261019').is_dir()):
             return candidate
-    raise FileNotFoundError('Required Reproducibility/analysis/reservoir ecology v25 not found among script ancestors')
+    raise FileNotFoundError('Required Reproducibility/analysis/reservoir ecology 20261019 not found among script ancestors')
 
 REPRO = find_repro()
 BASE = REPRO / 'analysis'
-V25 = BASE / 'reservoir ecology v25'
-V28 = BASE / 'reservoir innovation v28'
+V25 = BASE / 'reservoir ecology 20261019'
+V28 = BASE / 'reservoir innovation 20261019'
 METRICS = ['coverage', 'loss_shared', 'loss_outside', 'gain', 'net_loss', 'retained']
 
 def probability(d, ids, phase, cells):
@@ -48,7 +48,7 @@ def csv(z, name):
 def main():
     paths = [V25 / 'outputs/Primary sampled positions.parquet', V25 / 'outputs/Fold support primary.csv',
              V25 / 'outputs/Training allocations.csv', V28 / 'validation/outputs/Validation allocations.csv',
-             V25 / 'analyse_rimov.py', OUT / 'Opportunity components per cycle 1010.csv']
+             V25 / 'analyse_rimov_20261019.py', OUT / 'Opportunity components per cycle 1010.csv']
     s = pd.read_parquet(paths[0]); s['cycle'] = s.cycle.astype(str)
     folds = pd.read_csv(paths[1]); a = pd.read_csv(paths[2]); b = pd.read_csv(paths[3])
     records = []; alloc = []; checks = []

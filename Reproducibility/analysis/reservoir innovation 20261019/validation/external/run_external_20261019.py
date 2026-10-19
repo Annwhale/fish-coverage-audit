@@ -9,7 +9,7 @@ import importlib.util,hashlib,json
 import numpy as np
 import pandas as pd
 ROOT=Path(__file__).resolve().parent;V28=ROOT.parents[1];SRC=V28/'public assets/NewmanSound_year1.csv';OUT=ROOT/'outputs';OUT.mkdir(exist_ok=True)
-spec=importlib.util.spec_from_file_location('objective',V28/'coverage_objectives.py');m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m)
+spec=importlib.util.spec_from_file_location('objective',V28/'coverage_objectives_20261019.py');m=importlib.util.module_from_spec(spec);spec.loader.exec_module(m)
 d=pd.read_csv(SRC);d['time']=pd.to_datetime(d.Hourbin,format='%d/%m/%Y %H:%M');d['fish']=d.Tag.astype(str);d['cycle']=d.time.dt.strftime('%Y-%m-%d');d['phase']='All';d['hour']=d.time.dt.floor('h');d=d[d.Transplant.eq('Control')].copy();assert d.fish.nunique()==21
 assert not d.duplicated(['fish','hour']).any();assert d[['POINT_X','POINT_Y']].notna().all().all()
 d['cellx']=np.floor(d.POINT_X/100).astype(int);d['celly']=np.floor(d.POINT_Y/100).astype(int);d['cell']=d.cellx.astype(str)+':'+d.celly.astype(str)
