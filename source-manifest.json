@@ -1,5 +1,17 @@
 [
   {
+    "path": "analysis_20261021/allocation_20261021.py",
+    "sha256": "ca08e51c94300a813adeaee2f0fb5ec8a1c76afc73137b5f853c7e4299eafb7d"
+  },
+  {
+    "path": "analysis_20261021/ceiling_20261021.py",
+    "sha256": "1a26963410628530710889f61b242c77555269a4d368f4695535301aa6ae6daf"
+  },
+  {
+    "path": "analysis_20261021/history_20261021.py",
+    "sha256": "6dbc24bdd1db415c0e7d8c3ae581392858ae76ceae42c6aa0173cb2850272e8c"
+  },
+  {
     "path": "Reproducibility/analysis/Hangbu SAT validation 20261008/evaluate_predictions_20261019.py",
     "sha256": "382eb0054bdb410c53a05137c816bd3ab13949ae4e3316853938a2d871a4e1cf"
   },

@@ -4,23 +4,27 @@
 
 FFRC · Freshwater Fisheries Research Center
 
-Code for *Locating individual-history coverage losses within shared space*.
-Analyses cover individual coverage, shared-space losses and image-review budgets.
+Code for *Diagnosing coverage losses in aquatic monitoring under limited effort*.
 
 ## Run
 
 ```bash
 pip install -r requirements.txt
-python "Reproducibility/analysis/reservoir innovation 20261019/application/verify_small_example_20261019.py"
-python "Reproducibility/analysis/reservoir innovation 20261019/application/coverage_audit_20261019.py" coverage.csv --out results
+python analysis_20261021/allocation_20261021.py --inputs decision/Analysis/Inputs --out results/allocation
+python analysis_20261021/ceiling_20261021.py --inputs evaluation/Analysis/Inputs --prior evaluation/Analysis/Prior --out results/diagnosis
+python analysis_20261021/history_20261021.py --inputs additional/data --out results/history
 ```
 
-Input columns: `unit`, `date`, `coverage` (0–1). Optional: `method`, `k`, `phase`.
-The example uses synthetic data. Study analyses require the accompanying review data, arranged under the corresponding analysis directories.
+Extract `Decision analyses_20261021.zip`, `Evaluation trial_20261021.zip` and
+`Additional analyses_20261021.zip` from the manuscript supplements into
+`decision`, `evaluation` and `additional`, respectively.
 
-## Data sources
+Earlier image and telemetry analyses remain in `Reproducibility/analysis`.
+
+## Sources
 
 - [Říha reservoir data](https://doi.org/10.5281/zenodo.19885546) · CC BY 4.0
 - [Newman Sound data](https://doi.org/10.5061/dryad.2f2b3) · CC0
 
-Original images and reports are not included. For code reuse, contact the authors.
+Original images and commissioned reports are not included.
+For code reuse or data requests: duanjinrong@ffrc.cn.
